@@ -7,11 +7,11 @@ MS-600
 | ------ | ------------------------------------------------------------ | ----- | ---------- |
 | Lab 01 | (180 Min)                                                    |       |            |
 |        | 01-Student-lab-manual.md                                     | Done  | Sep/07     |
-|        | 02-Exercise-1-Registering-an-application-in-Azure-Active-Directory.md | Done  | Sep/06     |
+|        | 02-Exercise-1-Registering-an-application-in-Azure-Active-Directory.md | Done  | Sep/07     |
 |        | 03-Exercise-2-Implementing-authentication.md                 | Done  | Sep/07     |
 |        | 04-Exercise-3-Implementing-application-that-supports-B2B.md  | Done  | Sep/07     |
-|        | 05-Exercise-4-Configuring-permissions-to-consume-an-API.md   | Done  | Sep/07     |
-|        | 06-Exercise-5-Implementing-authorization-to-consume-an-API.md |       |            |
+|        | 05-Exercise-4-Configuring-permissions-to-consume-an-API.md    | Done  | Sep/09     |
+|        | 06-Exercise-5-Implementing-authorization-to-consume-an-API.md | Done  | Sep/09     |
 |        | 07-Exercise-6-Creating-a-service-to-access-Microsoft-Graph.md |       |            |
 | Lab 02 | (240 Min)                                                    |       |            |
 |        | 01-Student-lab-manual.md                                     |       |            |

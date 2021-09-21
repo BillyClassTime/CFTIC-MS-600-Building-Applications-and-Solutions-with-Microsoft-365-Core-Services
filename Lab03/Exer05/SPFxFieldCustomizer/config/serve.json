@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://brotonsmartlife.sharepoint.com/sites/Ventas/Lists/Work%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "6b150ed0-fde1-4218-87f7-e70b2ae0bc86",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    },
+    "helloFieldCustomizer": {
+      "pageUrl": "https://brotonsmartlife.sharepoint.com/sites/Ventas/Lists/Work%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "InternalFieldName": {
+          "id": "6b150ed0-fde1-4218-87f7-e70b2ae0bc86",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    }
+  }
+}

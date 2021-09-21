@@ -1,0 +1,54 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "packageName": "SpFxTeamsTogetherWebPart",
+    "id": "1fc57acd-57a0-416e-ab35-896dd188b9d9",
+    "version": "0.1",
+    "developer": {
+        "name": "Parker Porcupine",
+        "websiteUrl": "https://contoso.com",
+        "privacyUrl": "https://contoso.com/privacystatement",
+        "termsOfUseUrl": "https://contoso.com/servicesagreement"
+    },
+    "name": {
+        "short": "SPFxTeamsTogether"
+    },
+    "description": {
+        "short": "SPFxTeamsTogether description",
+        "full": "SPFxTeamsTogether description"
+    },
+    "icons": {
+        "outline": "1fc57acd-57a0-416e-ab35-896dd188b9d9_outline.png",
+        "color": "1fc57acd-57a0-416e-ab35-896dd188b9d9_color.png"
+    },
+    "accentColor": "#004578",
+    "staticTabs": [
+        {
+        "entityId": "com.contoso.personaltab.spfx",
+        "name": "My SPFx Personal Tab",
+        "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=1fc57acd-57a0-416e-ab35-896dd188b9d9%26forceLocale={locale}",
+        "scopes": [
+            "personal"
+        ]
+        }
+    ],
+    "configurableTabs": [
+        {
+        "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=1fc57acd-57a0-416e-ab35-896dd188b9d9%26forceLocale={locale}",
+        "canUpdateConfiguration": true,
+        "scopes": [
+            "team"
+        ]
+        }
+    ],
+    "validDomains": [
+        "*.login.microsoftonline.com",
+        "*.sharepoint.com",
+        "spoprod-a.akamaihd.net",
+        "resourceseng.blob.core.windows.net"
+    ],
+    "webApplicationInfo": {
+        "resource": "https://{teamSiteDomain}",
+        "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "url de request": [
+        {
+            "url": "https://graph.microsoft.com/v1.0/$batch.",
+            "method": "POST"
+        }
+    ],
+    "requests (BODY)": [
+        {
+            "url": "/me/drive/root/children",
+            "method": "GET",
+            "id": "1",
+            "body": {
+                "name": "Carpeta001",
+                "folder": {}
+            },
+            "headers": {
+                "Content-Type": "application/json"
+            }
+        },
+        {
+            "url": "/me/drive/root/children/Carpeta001",
+            "method": "GET",
+            "id": "2",
+            "DependsOn": [
+                "1"
+            ]
+        },
+        {
+            "utl":"",
+            "method":"GET",
+            "id":"3"
+        },
+        {
+            "utl":"",
+            "method":"GET",
+            "id":"4"
+        },
+        {
+            "utl":"",
+            "method":"GET",
+            "id":"5"
+        },
+        {
+            "utl":"",
+            "method":"GET",
+            "id":"6"
+        }
+
+    ]
+}

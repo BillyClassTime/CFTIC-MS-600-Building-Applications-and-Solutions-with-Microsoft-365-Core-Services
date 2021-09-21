@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "{{APPLICATION_ID}}",
+  "version": "4",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "brotonsmartlife",
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "YouTube Player",
+    "full": "YouTube Player"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "db154548-63f9-46a2-9db4-6030c8ab0df7",
+      "name": "YouTube Player 1",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/youTubePlayer1Tab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{PUBLIC_HOSTNAME}}"
+  ],
+  "showLoadingIndicator": false
+}

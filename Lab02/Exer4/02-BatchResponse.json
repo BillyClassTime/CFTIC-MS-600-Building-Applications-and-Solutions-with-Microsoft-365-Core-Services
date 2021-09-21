@@ -1,0 +1,115 @@
+{
+    "responses": [
+        {
+            "id": "1",
+            "status": 201,
+            "headers": {
+                "Location": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/_api/v2.0/drive/items/01HJQWGSOL6D47LW4DLJGZGIS46ARJUTYQ",
+                "Cache-Control": "no-cache",
+                "OData-Version": "4.0",
+                "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+            },
+            "body": {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('122a415f-efd0-45e5-bfb2-0315c06c28a6')/drive/root/children/$entity",
+                "createdDateTime": "2021-09-13T08:12:52Z",
+                "eTag": "\"{F5F9F0CB-83DB-4D5A-9322-5CF0229A4F10},1\"",
+                "id": "01HJQWGSOL6D47LW4DLJGZGIS46ARJUTYQ",
+                "lastModifiedDateTime": "2021-09-13T08:12:52Z",
+                "name": "Evidencias MS-600",
+                "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Evidencias%20MS-600",
+                "cTag": "\"c:{F5F9F0CB-83DB-4D5A-9322-5CF0229A4F10},0\"",
+                "size": 0,
+                "createdBy": {
+                    "application": {
+                        "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                        "displayName": "Graph Explorer"
+                    },
+                    "user": {
+                        "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                        "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                        "displayName": "FNU LNU"
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": {
+                        "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                        "displayName": "Graph Explorer"
+                    },
+                    "user": {
+                        "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                        "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                        "displayName": "FNU LNU"
+                    }
+                },
+                "parentReference": {
+                    "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                    "driveType": "business",
+                    "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                    "path": "/drive/root:"
+                },
+                "fileSystemInfo": {
+                    "createdDateTime": "2021-09-13T08:12:52Z",
+                    "lastModifiedDateTime": "2021-09-13T08:12:52Z"
+                },
+                "folder": {
+                    "childCount": 0
+                }
+            }
+        },
+        {
+            "id": "2",
+            "status": 200,
+            "headers": {
+                "Cache-Control": "no-cache",
+                "OData-Version": "4.0",
+                "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+            },
+            "body": {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('122a415f-efd0-45e5-bfb2-0315c06c28a6')/drive/root/children/$entity",
+                "createdDateTime": "2021-09-13T08:08:08Z",
+                "eTag": "\"{7BEAB972-D909-4E82-A4A3-5ED27FEF49F7},1\"",
+                "id": "01HJQWGSLSXHVHWCOZQJHKJI262J766SPX",
+                "lastModifiedDateTime": "2021-09-13T08:08:08Z",
+                "name": "TestBatchingFolder",
+                "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/TestBatchingFolder",
+                "cTag": "\"c:{7BEAB972-D909-4E82-A4A3-5ED27FEF49F7},0\"",
+                "size": 5309,
+                "createdBy": {
+                    "application": {
+                        "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                        "displayName": "Graph Explorer"
+                    },
+                    "user": {
+                        "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                        "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                        "displayName": "FNU LNU"
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": {
+                        "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                        "displayName": "Graph Explorer"
+                    },
+                    "user": {
+                        "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                        "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                        "displayName": "FNU LNU"
+                    }
+                },
+                "parentReference": {
+                    "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                    "driveType": "business",
+                    "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                    "path": "/drive/root:"
+                },
+                "fileSystemInfo": {
+                    "createdDateTime": "2021-09-13T08:08:08Z",
+                    "lastModifiedDateTime": "2021-09-13T08:08:08Z"
+                },
+                "folder": {
+                    "childCount": 1
+                }
+            }
+        }
+    ]
+}

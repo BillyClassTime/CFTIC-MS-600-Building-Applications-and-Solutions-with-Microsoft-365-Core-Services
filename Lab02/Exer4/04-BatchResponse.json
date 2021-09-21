@@ -1,0 +1,366 @@
+{
+    "url de request": [
+        {
+            "url": "https://graph.microsoft.com/v1.0/$batch.",
+            "method": "POST"
+        }
+    ],
+        "responses (Body)": [
+            {
+                "id": "1",
+                "status": 200,
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "OData-Version": "4.0",
+                    "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+                },
+                "body": {
+                    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('122a415f-efd0-45e5-bfb2-0315c06c28a6')/drive/root/children",
+                    "value": [
+                        {
+                            "createdDateTime": "2021-05-27T15:32:32Z",
+                            "eTag": "\"{CD1C30A5-6B15-40CA-A75A-A95A61DBF605},1\"",
+                            "id": "01HJQWGSNFGAOM2FLLZJAKOWVJLJQ5X5QF",
+                            "lastModifiedDateTime": "2021-05-27T15:32:32Z",
+                            "name": "20_611. Especialidad IFCD38_ Desarrollador Web y Cloud Microsoft",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/20_611.%20Especialidad%20IFCD38_%20Desarrollador%20Web%20y%20Cloud%20Microsoft",
+                            "cTag": "\"c:{CD1C30A5-6B15-40CA-A75A-A95A61DBF605},0\"",
+                            "size": 73399535211,
+                            "createdBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-05-27T15:32:32Z",
+                                "lastModifiedDateTime": "2021-05-27T15:32:32Z"
+                            },
+                            "folder": {
+                                "childCount": 118
+                            },
+                            "shared": {
+                                "scope": "users"
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-07-18T01:25:59Z",
+                            "eTag": "\"{04FDA6A7-4481-463F-8DAA-F391CD4B1F52},1\"",
+                            "id": "01HJQWGSNHU36QJAKEH5DI3KXTSHGUWH2S",
+                            "lastModifiedDateTime": "2021-07-18T01:25:59Z",
+                            "name": "Az-104",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Az-104",
+                            "cTag": "\"c:{04FDA6A7-4481-463F-8DAA-F391CD4B1F52},0\"",
+                            "size": 3326613147,
+                            "createdBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-07-18T01:25:59Z",
+                                "lastModifiedDateTime": "2021-07-18T01:25:59Z"
+                            },
+                            "folder": {
+                                "childCount": 8
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-07-17T22:46:31Z",
+                            "eTag": "\"{1D47D673-3DB8-40DA-9A52-D8E51340BE80},1\"",
+                            "id": "01HJQWGSLT2ZDR3OB53JAJUUWY4UJUBPUA",
+                            "lastModifiedDateTime": "2021-07-17T22:46:31Z",
+                            "name": "Az-220 Microsoft Azure IoT Developer",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Az-220%20Microsoft%20Azure%20IoT%20Developer",
+                            "cTag": "\"c:{1D47D673-3DB8-40DA-9A52-D8E51340BE80},0\"",
+                            "size": 3849392455,
+                            "createdBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-07-17T22:46:31Z",
+                                "lastModifiedDateTime": "2021-07-17T22:46:31Z"
+                            },
+                            "folder": {
+                                "childCount": 8
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-07-18T01:27:11Z",
+                            "eTag": "\"{37A147E5-92D4-4ACE-85BC-085216C30E35},1\"",
+                            "id": "01HJQWGSPFI6QTPVESZZFILPAIKILMGDRV",
+                            "lastModifiedDateTime": "2021-07-18T01:27:11Z",
+                            "name": "DevOps - 40511",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/DevOps%20-%2040511",
+                            "cTag": "\"c:{37A147E5-92D4-4ACE-85BC-085216C30E35},0\"",
+                            "size": 1510096906,
+                            "createdBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-07-18T01:27:11Z",
+                                "lastModifiedDateTime": "2021-07-18T01:27:11Z"
+                            },
+                            "folder": {
+                                "childCount": 3
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-09-13T08:12:52Z",
+                            "eTag": "\"{F5F9F0CB-83DB-4D5A-9322-5CF0229A4F10},1\"",
+                            "id": "01HJQWGSOL6D47LW4DLJGZGIS46ARJUTYQ",
+                            "lastModifiedDateTime": "2021-09-13T08:12:52Z",
+                            "name": "Evidencias MS-600",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Evidencias%20MS-600",
+                            "cTag": "\"c:{F5F9F0CB-83DB-4D5A-9322-5CF0229A4F10},0\"",
+                            "size": 0,
+                            "createdBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-09-13T08:12:52Z",
+                                "lastModifiedDateTime": "2021-09-13T08:12:52Z"
+                            },
+                            "folder": {
+                                "childCount": 0
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-09-13T08:21:39Z",
+                            "eTag": "\"{1697923C-879F-49F6-A39C-3FEE5ACAE980},1\"",
+                            "id": "01HJQWGSJ4SKLRNH4H6ZE2HHB75ZNMV2MA",
+                            "lastModifiedDateTime": "2021-09-13T08:21:39Z",
+                            "name": "Evidencias MS-600 - Septiembre 2021",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Evidencias%20MS-600%20-%20Septiembre%202021",
+                            "cTag": "\"c:{1697923C-879F-49F6-A39C-3FEE5ACAE980},0\"",
+                            "size": 0,
+                            "createdBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-09-13T08:21:39Z",
+                                "lastModifiedDateTime": "2021-09-13T08:21:39Z"
+                            },
+                            "folder": {
+                                "childCount": 0
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-05-29T11:35:18Z",
+                            "eTag": "\"{95916554-964F-46FB-B79E-827339DC392A},1\"",
+                            "id": "01HJQWGSKUMWIZKT4W7NDLPHUCOM45YOJK",
+                            "lastModifiedDateTime": "2021-05-29T11:35:18Z",
+                            "name": "Proyecto Comunidad 2025",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/Proyecto%20Comunidad%202025",
+                            "cTag": "\"c:{95916554-964F-46FB-B79E-827339DC392A},0\"",
+                            "size": 75698935,
+                            "createdBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-05-29T11:35:18Z",
+                                "lastModifiedDateTime": "2021-05-29T11:35:18Z"
+                            },
+                            "folder": {
+                                "childCount": 10
+                            }
+                        },
+                        {
+                            "createdDateTime": "2021-09-13T08:08:08Z",
+                            "eTag": "\"{7BEAB972-D909-4E82-A4A3-5ED27FEF49F7},1\"",
+                            "id": "01HJQWGSLSXHVHWCOZQJHKJI262J766SPX",
+                            "lastModifiedDateTime": "2021-09-13T08:08:08Z",
+                            "name": "TestBatchingFolder",
+                            "webUrl": "https://brotonsmartlife-my.sharepoint.com/personal/luzjanneth_brotonsmartlife_onmicrosoft_com/Documents/TestBatchingFolder",
+                            "cTag": "\"c:{7BEAB972-D909-4E82-A4A3-5ED27FEF49F7},0\"",
+                            "size": 5309,
+                            "createdBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "lastModifiedBy": {
+                                "application": {
+                                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                                    "displayName": "Graph Explorer"
+                                },
+                                "user": {
+                                    "email": "LuzJanneth@brotonsmartlife.onmicrosoft.com",
+                                    "id": "122a415f-efd0-45e5-bfb2-0315c06c28a6",
+                                    "displayName": "FNU LNU"
+                                }
+                            },
+                            "parentReference": {
+                                "driveId": "b!58K9DKYXFk23UL4Q1rSHY4pYaIbb_DxOrYkFx7jxBzt5xKLS62kDRqUIkpFraso4",
+                                "driveType": "business",
+                                "id": "01HJQWGSN6Y2GOVW7725BZO354PWSELRRZ",
+                                "path": "/drive/root:"
+                            },
+                            "fileSystemInfo": {
+                                "createdDateTime": "2021-09-13T08:08:08Z",
+                                "lastModifiedDateTime": "2021-09-13T08:08:08Z"
+                            },
+                            "folder": {
+                                "childCount": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "2",
+                "status": 404,
+                "headers": {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "code": "itemNotFound",
+                        "message": "The resource could not be found.",
+                        "innerError": {
+                            "date": "2021-09-13T08:34:44",
+                            "request-id": "5d0979fd-ef13-4a05-8baa-2e9b1ec54782",
+                            "client-request-id": "0299a18b-8dbe-a403-7978-52ec67c60fe5"
+                        }
+                    }
+                }
+            }
+        ]
+    }

@@ -1,0 +1,47 @@
+{
+    "responses": [
+        {
+            "id": "1",
+            "status": 200,
+            "headers": {
+                "Cache-Control": "no-cache",
+                "x-ms-resource-unit": "1",
+                "OData-Version": "4.0",
+                "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+            },
+            "body": {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,jobTitle,userPrincipalName)/$entity",
+                "@odata.id": "https://graph.microsoft.com/v2/acaa7300-0b0d-4772-baa7-60ba6aaa5853/directoryObjects/122a415f-efd0-45e5-bfb2-0315c06c28a6/Microsoft.DirectoryServices.User",
+                "displayName": "FNU LNU",
+                "jobTitle": null,
+                "userPrincipalName": "LuzJanneth@brotonsmartlife.onmicrosoft.com"
+            }
+        },
+        {
+            "id": "2",
+            "status": 200,
+            "headers": {
+                "Cache-Control": "private",
+                "OData-Version": "4.0",
+                "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+            },
+            "body": {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('122a415f-efd0-45e5-bfb2-0315c06c28a6')/messages(from,subject,receivedDateTime,bodyPreview)",
+                "value": []
+            }
+        },
+        {
+            "id": "3",
+            "status": 200,
+            "headers": {
+                "Cache-Control": "private",
+                "OData-Version": "4.0",
+                "Content-Type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+            },
+            "body": {
+                "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('122a415f-efd0-45e5-bfb2-0315c06c28a6')/events",
+                "value": []
+            }
+        }
+    ]
+}

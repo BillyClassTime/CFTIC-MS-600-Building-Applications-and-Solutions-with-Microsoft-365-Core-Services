@@ -1,0 +1,30 @@
+{
+    "url de request": [
+        {
+            "url": "https://graph.microsoft.com/v1.0/$batch.",
+            "method": "POST"
+        }
+    ],
+    "requests (BODY)": [
+        {
+            "url": "/me/drive/root/children",
+            "method": "POST",
+            "id": "1",
+            "body": {
+                "name": "Evidencias MS-600 - Septiembre 2021",
+                "folder": {}
+            },
+            "headers": {
+                "Content-Type": "application/json"
+            }
+        },
+        {
+            "url": "/me/drive/root/children/Evidencias MS-600 - Septiembre 2021",
+            "method": "GET",
+            "id": "2",
+            "DependsOn": [
+                "1"
+            ]
+        }
+    ]
+}

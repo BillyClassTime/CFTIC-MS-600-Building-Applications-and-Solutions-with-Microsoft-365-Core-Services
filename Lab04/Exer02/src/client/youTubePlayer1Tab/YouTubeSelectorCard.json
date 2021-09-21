@@ -1,0 +1,41 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+        "type": "Container",
+        "items": [
+            {
+            "type": "TextBlock",
+            "text": "Selección de videos de YouTube",
+            "weight": "bolder",
+            "size": "extraLarge"
+            }
+        ]
+        },
+        {
+        "type": "Container",
+        "items": [
+            {
+            "type": "TextBlock",
+            "text": "Entre el Id del video que desea visualizar",
+            "wrap": true
+            },
+            {
+            "type": "Input.Text",
+            "id": "youTubeVideoId",
+            "value": ""
+            }
+        ]
+        }
+    ],
+    "actions": [
+        {
+        "type": "Action.Submit",
+        "title": "Update"
+        }
+    ]
+    }
+    
+    

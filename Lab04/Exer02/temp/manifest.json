@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "318153b0-17a3-11ec-8409-a149dd8fb602",
+  "version": "5",
+  "packageName": "youtubeplayer",
+  "developer": {
+    "name": "brotonsmartlife",
+    "websiteUrl": "https://8c77-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://8c77-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://8c77-90-71-78-30.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "YouTube Player",
+    "full": "YouTube Player"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "db154548-63f9-46a2-9db4-6030c8ab0df7",
+      "name": "YouTube Player 1",
+      "contentUrl": "https://8c77-90-71-78-30.ngrok.io/youTubePlayer1Tab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "8c77-90-71-78-30.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}

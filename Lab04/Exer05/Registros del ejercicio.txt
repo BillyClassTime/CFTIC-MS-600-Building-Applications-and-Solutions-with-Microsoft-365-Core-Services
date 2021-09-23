@@ -1,0 +1,12 @@
+https://1707-90-71-78-30.ngrok.io
+
+ https://1707-90-71-78-30.ngrok.io
+
+https://1707-90-71-78-30.ngrok.io/api/webhook
+
+
+Security Token
+Z***NF5UE=
+
+Exercise 5:
+incomming Webhooks URL: https://brotonsmartlife.webhook.office.com/webhookb2/10c715fb-2836-4071-b96a-caeef3f581dc@acaa7300-0b0d-4772-baa7-60ba6aaa5853/IncomingWebhook/1****??91a85455faf7120facd39a761/122a415f-efd0-45e5-bfb2-0315c06c28a6

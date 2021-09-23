@@ -23,6 +23,7 @@ export const YouTubePlayer1Tab = () => {
     "VlEH4vtaxp4"
   );
   const appRoot = (): string => {
+    console.log("En el appRoot","");
     if (typeof window === "undefined") {
       return "https://{{HOSTNAME}}";
     } else {

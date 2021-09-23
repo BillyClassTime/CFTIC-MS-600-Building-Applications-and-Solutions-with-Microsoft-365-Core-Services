@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.8",
-  "id": "318153b0-17a3-11ec-8409-a149dd8fb602",
+  "id": "31c7a77e-cea1-4b77-b51c-5fc173af1293",
   "version": "5",
   "packageName": "youtubeplayer",
   "developer": {
     "name": "brotonsmartlife",
-    "websiteUrl": "https://8c77-90-71-78-30.ngrok.io",
-    "privacyUrl": "https://8c77-90-71-78-30.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://8c77-90-71-78-30.ngrok.io/tou.html"
+    "websiteUrl": "https://ceb8-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://ceb8-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://ceb8-90-71-78-30.ngrok.io/tou.html"
   },
   "name": {
     "short": "YouTube Player",
@@ -28,13 +28,33 @@
     {
       "entityId": "db154548-63f9-46a2-9db4-6030c8ab0df7",
       "name": "YouTube Player 1",
-      "contentUrl": "https://8c77-90-71-78-30.ngrok.io/youTubePlayer1Tab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "contentUrl": "https://ceb8-90-71-78-30.ngrok.io/youTubePlayer1Tab/?name={loginHint}&tenant={tid}&theme={theme}",
       "scopes": [
         "personal"
       ]
     }
   ],
-  "bots": [],
+  "bots": [
+    {
+      "botId": "31c7a77e-cea1-4b77-b51c-5fc173af1293",
+      "scopes": [
+        "personal"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [ "personal" ],
+          "commands": [
+            {
+              "title": "MentionMe",
+              "description": "Sends message with @mention of the sender"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "connectors": [],
   "composeExtensions": [],
   "permissions": [
@@ -42,7 +62,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "8c77-90-71-78-30.ngrok.io"
+    "ceb8-90-71-78-30.ngrok.io"
   ],
   "showLoadingIndicator": false
 }

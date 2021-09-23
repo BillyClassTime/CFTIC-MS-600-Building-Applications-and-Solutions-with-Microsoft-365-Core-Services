@@ -2,13 +2,13 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
   "manifestVersion": "1.8",
   "id": "bc7762a4-fbd4-4596-9210-6da5bdf7ac40",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "packageName": "messagingext",
   "developer": {
     "name": "brotonsmartlife",
-    "websiteUrl": "https://6ee7-90-71-78-30.ngrok.io",
-    "privacyUrl": "https://6ee7-90-71-78-30.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://6ee7-90-71-78-30.ngrok.io/tou.html"
+    "websiteUrl": "https://030b-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://030b-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://030b-90-71-78-30.ngrok.io/tou.html"
   },
   "name": {
     "short": "Planet messaging",
@@ -42,7 +42,20 @@
             "message"
           ],
           "fetchTask": true
+        },
+        {
+          "id": "planetExpanderSearch",
+          "type": "query",
+          "title": "Planet Lookup",
+          "description": "Search for a planet.",
+          "context": ["compose"],
+          "parameters": [{
+            "name": "searchKeyword",
+            "description": "Enter 'inner','outer' or the name of a specific planet",
+            "title": "Planet"
+          }]
         }
+        
       ]
     }
   ],
@@ -51,7 +64,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "6ee7-90-71-78-30.ngrok.io"
+    "030b-90-71-78-30.ngrok.io"
   ],
   "showLoadingIndicator": false
 }

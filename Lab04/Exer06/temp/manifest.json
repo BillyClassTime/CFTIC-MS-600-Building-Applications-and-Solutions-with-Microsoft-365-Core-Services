@@ -6,9 +6,9 @@
   "packageName": "learnmsteamstabs",
   "developer": {
     "name": "brotonsmartlife",
-    "websiteUrl": "https://2d21-90-71-78-30.ngrok.io",
-    "privacyUrl": "https://2d21-90-71-78-30.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://2d21-90-71-78-30.ngrok.io/tou.html"
+    "websiteUrl": "https://3871-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://3871-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://3871-90-71-78-30.ngrok.io/tou.html"
   },
   "name": {
     "short": "Learn MSTeams Tabs",
@@ -25,7 +25,7 @@
   "accentColor": "#D85028",
   "configurableTabs": [
     {
-      "configurationUrl": "https://2d21-90-71-78-30.ngrok.io/configMathTab1Tab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "configurationUrl": "https://3871-90-71-78-30.ngrok.io/configMathTab1Tab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -36,7 +36,7 @@
     {
       "entityId": "0fbe38d9-8457-4f6d-9c5a-120f4efe8cbf",
       "name": "LearnPersonalTab",
-      "contentUrl": "https://2d21-90-71-78-30.ngrok.io/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "contentUrl": "https://3871-90-71-78-30.ngrok.io/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
       "scopes": [
         "personal"
       ]
@@ -50,7 +50,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "2d21-90-71-78-30.ngrok.io"
+    "3871-90-71-78-30.ngrok.io"
   ],
   "showLoadingIndicator": false
 }

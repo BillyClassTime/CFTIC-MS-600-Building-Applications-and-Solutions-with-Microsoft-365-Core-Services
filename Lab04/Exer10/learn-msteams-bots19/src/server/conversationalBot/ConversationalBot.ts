@@ -2,6 +2,11 @@ import { BotDeclaration } from "express-msteams-host";
 import * as debug from "debug";
 import { DialogSet, DialogState } from "botbuilder-dialogs";
 import {
+    ConversationReference,
+    ConversationParameters,
+    teamsGetChannelId,
+    Activity,
+    BotFrameworkAdapter,
     StatePropertyAccessor,
     CardFactory,
     TurnContext,
@@ -58,6 +63,10 @@ export class ConversationalBot extends TeamsActivityHandler {
                       break;
                     case "delete":
                       await this.deleteCardActivity(context);
+                      break;
+                    case "newconversation":
+                      const message = MessageFactory.text("This will be the first message in a new thread");
+                      await this.teamsCreateConversation(context, message);
                       break;
                   }
                 } else {
@@ -140,8 +149,25 @@ export class ConversationalBot extends TeamsActivityHandler {
         this.onMessageReaction(async (context: TurnContext): Promise<void> => {
            if (context.activity.reactionsAdded) {
                 context.activity.reactionsAdded.forEach(async (reaction) => {
-                    if (reaction.type === "like") {
+                    switch (reaction.type) {
+                    case "like":
                         await context.sendActivity("Thank you!");
+                        break;
+                    case "heart":
+                        await context.sendActivity("I love you too!");
+                        break;
+                    case "laugh":
+                        await context.sendActivity("What F&%* do you laugh?");
+                        break;
+                    case "surprised":
+                        await context.sendActivity("Thank you!");
+                        break;
+                    case "sad":
+                        await context.sendActivity("I'm sorry");
+                        break;
+                    case "angry":
+                        await context.sendActivity("take a easy");
+                        break;
                     }
                 });
             }
@@ -158,9 +184,9 @@ export class ConversationalBot extends TeamsActivityHandler {
         const replyActivity = MessageFactory.text(`Hi ${mention.text} from a 1:1 chat.`);
         replyActivity.entities = [mention];
         await context.sendActivity(replyActivity);
-      }
+    }
       
-      private async handleMessageMentionMeChannelConversation(context: TurnContext): Promise<void> {
+    private async handleMessageMentionMeChannelConversation(context: TurnContext): Promise<void> {
         const mention = {
           mentioned: context.activity.from,
           text: `<at>${new TextEncoder().encode(context.activity.from.name)}</at>`,
@@ -216,6 +242,11 @@ export class ConversationalBot extends TeamsActivityHandler {
               type: "Action.Submit",
               title: "Delete card",
               data: { cardAction: "delete"}
+            },
+            {
+              type: "Action.Submit",
+              title: "Create new thread in this channel",
+              data: { cardAction: "newconversation" }
             }
           ]
         });
@@ -226,4 +257,32 @@ export class ConversationalBot extends TeamsActivityHandler {
       private async deleteCardActivity(context): Promise<void> {
         await context.deleteActivity(context.activity.replyToId);
       }
+
+      private async teamsCreateConversation(context: TurnContext, message: Partial<Activity>): Promise<void> {
+        // get a reference to the bot adapter & create a connection to the Teams API
+        const adapter = <BotFrameworkAdapter>context.adapter;
+        const connectorClient = adapter.createConnectorClient(context.activity.serviceUrl);
+
+        // set current teams channel in new conversation parameters
+        const teamsChannelId = teamsGetChannelId(context.activity);
+        const conversationParameters: ConversationParameters = {
+          isGroup: true,
+          channelData: {
+            channel: {
+              id: teamsChannelId
+            }
+          },
+          activity: message as Activity,
+          bot: context.activity.recipient
+        };
+        
+        // create conversation and send message
+        await connectorClient.conversations.createConversation(conversationParameters);
+      }
+
+
+
+
+
+
 }

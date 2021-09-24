@@ -2,13 +2,13 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
   "manifestVersion": "1.9",
   "id": "35cfdf49-bf40-4022-a1d6-cc565d8161fb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageName": "conversationalbot",
   "developer": {
     "name": "brotonsmartlife",
-    "websiteUrl": "https://e340-90-71-78-30.ngrok.io",
-    "privacyUrl": "https://e340-90-71-78-30.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://e340-90-71-78-30.ngrok.io/tou.html"
+    "websiteUrl": "https://52fa-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://52fa-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://52fa-90-71-78-30.ngrok.io/tou.html"
   },
   "name": {
     "short": "Conversational Bot",
@@ -66,7 +66,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "e340-90-71-78-30.ngrok.io"
+    "52fa-90-71-78-30.ngrok.io"
   ],
   "showLoadingIndicator": false
 }

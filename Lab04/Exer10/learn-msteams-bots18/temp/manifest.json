@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "id": "35cfdf49-bf40-4022-a1d6-cc565d8161fb",
+    "version": "1.0.0",
+    "packageName": "conversationalbot",
+    "developer": {
+      "name": "brotonsmartlife",
+      "websiteUrl": "https://25b5-90-71-78-30.ngrok.io",
+      "privacyUrl": "https://25b5-90-71-78-30.ngrok.io/privacy.html",
+      "termsOfUseUrl": "https://25b5-90-71-78-30.ngrok.io/tou.html"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+      },
+    "name": {
+      "short": "Conversational Bot",
+      "full": "Billy Miguel Vanegas"
+    },
+    "description": {
+      "short": "TODO: add short description here",
+      "full": "TODO: add full description here"
+    },
+    "accentColor": "#FFFFFF",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [
+      {
+        "botId": "5030d0e7-69b2-49b7-94b8-72c5e9e99d7d",
+        "needsChannelSelector": false,
+        "isNotificationOnly": false,
+        "scopes": [
+          "team",
+          "personal"
+        ],
+        "commandLists": [
+          {
+            "scopes": [
+              "team",
+              "personal"
+            ],
+            "commands": [
+                {"title": "Help","description": "Shows help information"},
+                {
+                    "title": "MentionMe",
+                    "description": "Send message with @mention of the sender"
+                }
+            ]
+          }
+        ]
+      }
+    ],
+    "connectors": [],
+    "composeExtensions": [],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "25b5-90-71-78-30.ngrok.io"
+    ],
+    "showLoadingIndicator": false
+  }

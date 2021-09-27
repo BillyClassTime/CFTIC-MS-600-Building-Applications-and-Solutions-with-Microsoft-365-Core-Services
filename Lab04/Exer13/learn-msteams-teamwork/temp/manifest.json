@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "300f14b0-1f67-11ec-a0c8-51163c35d747",
+  "version": "0.0.1",
+  "packageName": "learnmsteamsteamwork",
+  "developer": {
+    "name": "brotonsmartlife",
+    "websiteUrl": "https://d121-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://d121-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://d121-90-71-78-30.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "MSGraph Playground",
+    "full": "MSGraph Playground"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://d121-90-71-78-30.ngrok.io/msGraphTeamworkTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "d121-90-71-78-30.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "webApplicationInfo": {
+    "id": "2eb94972-dac4-42bd-85d3-8c9a1975c228",
+    "resource": "api://127.0.0.1.ngrok.io/2eb94972-dac4-42bd-85d3-8c9a1975c228"
+  }
+}

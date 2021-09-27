@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f3c14b2e-b019-400f-bb1b-2f2e9faa3dab/resourceGroups/TeamsMSGraph/providers/Microsoft.Web/sites/appteamsbmvb",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}

@@ -6,9 +6,9 @@
   "packageName": "learnmsteamsteamwork",
   "developer": {
     "name": "brotonsmartlife",
-    "websiteUrl": "https://ad5e-90-71-78-30.ngrok.io",
-    "privacyUrl": "https://ad5e-90-71-78-30.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://ad5e-90-71-78-30.ngrok.io/tou.html"
+    "websiteUrl": "https://d4e9-90-71-78-30.ngrok.io",
+    "privacyUrl": "https://d4e9-90-71-78-30.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://d4e9-90-71-78-30.ngrok.io/tou.html"
   },
   "name": {
     "short": "MSGraph Playground",
@@ -25,7 +25,7 @@
   "accentColor": "#D85028",
   "configurableTabs": [
     {
-      "configurationUrl": "https://ad5e-90-71-78-30.ngrok.io/msGraphTeamworkTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "configurationUrl": "https://d4e9-90-71-78-30.ngrok.io/msGraphTeamworkTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -41,11 +41,11 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "ad5e-90-71-78-30.ngrok.io"
+    "d4e9-90-71-78-30.ngrok.io"
   ],
   "showLoadingIndicator": false,
   "webApplicationInfo": {
     "id": "2eb94972-dac4-42bd-85d3-8c9a1975c228",
-    "resource": "api://ad5e-90-71-78-30.ngrok.io/2eb94972-dac4-42bd-85d3-8c9a1975c228"
+    "resource": "api://d4e9-90-71-78-30.ngrok.io/2eb94972-dac4-42bd-85d3-8c9a1975c228"
   }
 }

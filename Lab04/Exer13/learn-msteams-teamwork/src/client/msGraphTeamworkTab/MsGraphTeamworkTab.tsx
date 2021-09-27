@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Provider, Flex, Text, Button, Header, Avatar, List } from "@fluentui/react-northstar";
+import { WordIcon, ExcelIcon } from "@fluentui/react-icons-northstar";
 import { useState, useEffect, useCallback  } from "react";
 import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
@@ -81,6 +82,55 @@ export const MsGraphTeamworkTab = () => {
         }
     }, [msGraphOboToken]);
 
+    const handleWordOnClick = useCallback(async() => {
+        if (!msGraphOboToken || !context) { return; }
+
+        const endpoint = `https://graph.microsoft.com/v1.0/teams/${context.groupId}/channels/${context.channelId}/tabs`;
+            const requestObject = {
+                method: 'POST',
+                headers: {
+                authorization: `bearer ${msGraphOboToken}`,
+                "content-type": 'application/json'
+                },
+                body: JSON.stringify({
+                displayName: "Word",
+                "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+                configuration: {
+                    entityId: "4A257895-6C75-4B76-8B5A-A9756AA73974",
+                    contentUrl: "https://brotonsmartlife.sharepoint.com/sites/brotonsmartlife/Shared%20Documents/document.docx",
+                    removeUrl: null,
+                    websiteUrl: null
+                }
+                })
+            };
+
+        await fetch(endpoint, requestObject);
+    }, [context, msGraphOboToken]);
+
+    const handleExcelOnClick = useCallback(async() => {
+        if (!msGraphOboToken || !context) { return; }
+
+        const endpoint = `https://graph.microsoft.com/v1.0/teams/${context.groupId}/channels/${context.channelId}/tabs`;
+        const requestObject = {
+            method: 'POST',
+            headers: {
+            authorization: `bearer ${msGraphOboToken}`,
+            "content-type": 'application/json'
+            },
+            body: JSON.stringify({
+            displayName: "Excel",
+            "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.excel",
+            configuration: {
+                entityId: "2A451F2C-5BC0-4EEF-B986-671705798A54",
+                contentUrl: "https://m365x285179.sharepoint.com/sites/TestTeam/Shared Documents/General/Book.xlsx",
+                removeUrl: null,
+                websiteUrl: null
+            }
+            })
+        };
+
+        await fetch(endpoint, requestObject);
+    }, [context, msGraphOboToken]);
 
     useEffect(() => {
         // if the SSO token is defined...
@@ -137,6 +187,9 @@ export const MsGraphTeamworkTab = () => {
                         {error && <div><Text content={`An SSO error occurred ${error}`} /></div>}
 
                         {joinedTeams && <div><h3>Eres integrante de los siguiente equipos:</h3><List items={joinedTeams} /></div>}
+
+                        <Button icon={<WordIcon />} content="Add Word tab" onClick={handleWordOnClick} />
+                        <Button icon={<ExcelIcon />} content="Add Excel tab" onClick={handleExcelOnClick} />
 
                         <div>
                             <Button onClick={() => alert("It worked!")}>A sample button</Button>

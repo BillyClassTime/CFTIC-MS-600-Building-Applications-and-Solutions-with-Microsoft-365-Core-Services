@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Provider, Flex, Text, Button, Header, Avatar } from "@fluentui/react-northstar";
+import { Provider, Flex, Text, Button, Header, Avatar, List } from "@fluentui/react-northstar";
 import { useState, useEffect, useCallback  } from "react";
 import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
@@ -17,6 +17,7 @@ export const MsGraphTeamworkTab = () => {
     const [ssoToken, setSsoToken] = useState<string>();
     const [msGraphOboToken, setMsGraphOboToken] = useState<string>();
     const [photo, setPhoto] = useState<string>();
+    const [joinedTeams, setJoinedTeams] = useState<any[]>();
 
     useEffect(() => {
         if (inTeams === true) {
@@ -58,6 +59,29 @@ export const MsGraphTeamworkTab = () => {
     }, [ssoToken]);
     // End Step 8
 
+    const getJoinedTeams = useCallback(async () => {
+        if (!msGraphOboToken) { return; }
+        const endpoint = "https://graph.microsoft.com/v1.0/me/joinedTeams";
+        const requestObject = {
+            method: "GET",
+            headers: {
+            accept: "application/json",
+            authorization: `bearer ${msGraphOboToken}`
+            }
+        };
+        const response = await fetch(endpoint, requestObject);
+        const responsePayload = await response.json();
+        if (response.ok) {
+            const listFriendlyJoinedTeams = responsePayload.value.map((team: any) => ({
+            key: team.id,
+            header: team.displayName,
+            content: `Team ID: ${team.id}`
+            }));
+            setJoinedTeams(listFriendlyJoinedTeams);
+        }
+    }, [msGraphOboToken]);
+
+
     useEffect(() => {
         // if the SSO token is defined...
         if (ssoToken && ssoToken.length > 0) {
@@ -82,6 +106,7 @@ export const MsGraphTeamworkTab = () => {
     }, [msGraphOboToken]);
 
     useEffect(() => {
+        getJoinedTeams();
         getProfilePhoto();
     }, [msGraphOboToken]);
 
@@ -110,6 +135,8 @@ export const MsGraphTeamworkTab = () => {
                         {photo && <div><Avatar image={photo} size='largest' /></div>}
 
                         {error && <div><Text content={`An SSO error occurred ${error}`} /></div>}
+
+                        {joinedTeams && <div><h3>Eres integrante de los siguiente equipos:</h3><List items={joinedTeams} /></div>}
 
                         <div>
                             <Button onClick={() => alert("It worked!")}>A sample button</Button>

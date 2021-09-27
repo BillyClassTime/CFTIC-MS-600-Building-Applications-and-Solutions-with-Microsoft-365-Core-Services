@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Provider, Flex, Text, Button, Header } from "@fluentui/react-northstar";
-import { useState, useEffect } from "react";
+import { Provider, Flex, Text, Button, Header, Avatar } from "@fluentui/react-northstar";
+import { useState, useEffect, useCallback  } from "react";
 import { useTeams } from "msteams-react-base-component";
 import * as microsoftTeams from "@microsoft/teams-js";
 import jwtDecode from "jwt-decode";
@@ -14,6 +14,9 @@ export const MsGraphTeamworkTab = () => {
     const [entityId, setEntityId] = useState<string | undefined>();
     const [name, setName] = useState<string>();
     const [error, setError] = useState<string>();
+    const [ssoToken, setSsoToken] = useState<string>();
+    const [msGraphOboToken, setMsGraphOboToken] = useState<string>();
+    const [photo, setPhoto] = useState<string>();
 
     useEffect(() => {
         if (inTeams === true) {
@@ -21,6 +24,8 @@ export const MsGraphTeamworkTab = () => {
                 successCallback: (token: string) => {
                     const decoded: { [key: string]: any; } = jwtDecode(token) as { [key: string]: any; };
                     setName(decoded!.name);
+                    setSsoToken(token);
+
                     microsoftTeams.appInitialization.notifySuccess();
                 },
                 failureCallback: (message: string) => {
@@ -36,6 +41,49 @@ export const MsGraphTeamworkTab = () => {
             setEntityId("Not in Microsoft Teams");
         }
     }, [inTeams]);
+
+    // Step 8
+    const exchangeSsoTokenForOboToken = useCallback(async () => {
+        const response = await fetch(`/exchangeSsoTokenForOboToken/?ssoToken=${ssoToken}`);
+        const responsePayload = await response.json();
+        if (response.ok) {
+            setMsGraphOboToken(responsePayload.access_token);
+            } else {
+                if (responsePayload!.error === "consent_required") {
+                setError("consent_required");
+                } else {
+                setError("unknown SSO error");
+                }
+            }
+    }, [ssoToken]);
+    // End Step 8
+
+    useEffect(() => {
+        // if the SSO token is defined...
+        if (ssoToken && ssoToken.length > 0) {
+            exchangeSsoTokenForOboToken();
+        }
+    }, [exchangeSsoTokenForOboToken, ssoToken]);
+
+    const getProfilePhoto = useCallback(async () => {
+        if (!msGraphOboToken) { return; }
+            const endpoint = "https://graph.microsoft.com/v1.0/me/photo/$value";
+            const requestObject = {
+                method: "GET",
+                headers: {
+                accept: "image/jpg",
+                authorization: `bearer ${msGraphOboToken}`
+                }
+            };
+            const response = await fetch(endpoint, requestObject);
+            if (response.ok) {
+                setPhoto(URL.createObjectURL(await response.blob()));
+            }
+    }, [msGraphOboToken]);
+
+    useEffect(() => {
+        getProfilePhoto();
+    }, [msGraphOboToken]);
 
     useEffect(() => {
         if (context) {
@@ -59,6 +107,8 @@ export const MsGraphTeamworkTab = () => {
                         <div>
                             <Text content={`Hello ${name}`} />
                         </div>
+                        {photo && <div><Avatar image={photo} size='largest' /></div>}
+
                         {error && <div><Text content={`An SSO error occurred ${error}`} /></div>}
 
                         <div>

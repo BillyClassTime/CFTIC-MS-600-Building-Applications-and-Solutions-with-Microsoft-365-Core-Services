@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "brotonsmartlife"
+    },
+    "libraryName": "learnMsteamsSsoTab",
+    "generator-version": "3.2.0"
+  }
+}

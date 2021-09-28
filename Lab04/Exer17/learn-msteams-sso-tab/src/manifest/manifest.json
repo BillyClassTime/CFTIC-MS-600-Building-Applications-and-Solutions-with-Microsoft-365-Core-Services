@@ -11,8 +11,8 @@
     "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
   },
   "name": {
-    "short": "MSGraph Playground",
-    "full": "MSGraph Playground"
+    "short": "SSO Teams Tab",
+    "full": "SSO Teams Tab"
   },
   "description": {
     "short": "TODO: add short description here",
@@ -25,7 +25,7 @@
   "accentColor": "#D85028",
   "configurableTabs": [
     {
-      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/msGraphTeamworkTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/ssoTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -47,14 +47,5 @@
   "webApplicationInfo": {
     "id": "{{TAB_APP_ID}}",
     "resource": "{{TAB_APP_URI}}"
-  },
-  "activities": {
-    "activityTypes": [
-      {
-        "type": "userMention",
-        "description": "Personal Mention Activity",
-        "templateText": "{actor} added the {tabName} tab to the {teamName}'s | {channelName} channel"
-      }
-    ]
   }
 }

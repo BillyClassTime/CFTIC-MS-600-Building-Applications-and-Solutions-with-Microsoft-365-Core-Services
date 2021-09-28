@@ -103,8 +103,8 @@ export const MsGraphTeamworkTab = () => {
                 }
                 })
             };
-
         await fetch(endpoint, requestObject);
+        await sendActivityMessage();
     }, [context, msGraphOboToken]);
 
     const handleExcelOnClick = useCallback(async() => {
@@ -165,6 +165,41 @@ export const MsGraphTeamworkTab = () => {
             setEntityId(context.entityId);
         }
     }, [context]);
+
+    const sendActivityMessage = useCallback(async() => {
+        if (!msGraphOboToken || !context) { return; }
+
+        const endpoint = `https://graph.microsoft.com/v1.0/teams/${context.groupId}/sendActivityNotification`;
+        const requestObject = {
+            method: 'POST',
+            headers: {
+            authorization: `bearer ${msGraphOboToken}`,
+            'content-type': 'application/json',
+            },
+            body: JSON.stringify({
+            topic: {
+                source: "entityUrl",
+                value: `https://graph.microsoft.com/v1.0/teams/${context.groupId}`
+            },
+            activityType: "userMention",
+            previewText: {
+                content: "New tab created"
+            },
+            recipient: {
+                "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+                userId: "3ef0c28d-cc5b-441e-8e1f-d3d6b0d66ac1"
+            },
+            templateParameters: [
+                { name: "tabName", value: "Word" },
+                { name: "teamName", value: `${context.teamName}` },
+                { name: "channelName", value: `${context.channelName}` }
+            ]
+            })
+        };
+
+        await fetch(endpoint, requestObject);
+    }, [context, msGraphOboToken]);
+
 
     /**
      * The render() method to create the UI of the tab

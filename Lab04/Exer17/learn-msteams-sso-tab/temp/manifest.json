@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "ff69e040-203f-11ec-a487-eb594cd67d51",
+  "version": "0.0.1",
+  "packageName": "learnmsteamsssotab",
+  "developer": {
+    "name": "brotonsmartlife",
+    "websiteUrl": "https://teamsssoappbmvb.azurewebsites.net",
+    "privacyUrl": "https://teamsssoappbmvb.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://teamsssoappbmvb.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "SSO Teams Tab",
+    "full": "SSO Teams Tab"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://teamsssoappbmvb.azurewebsites.net/ssoTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "teamsssoappbmvb.azurewebsites.net"
+  ],
+  "showLoadingIndicator": false,
+  "webApplicationInfo": {
+    "id": "bab1495c-b544-4c24-925d-ffc9714bf1fc",
+    "resource": "api://teamsssoappbmvb.azurewebsites.net/bab1495c-b544-4c24-925d-ffc9714bf1fc"
+  }
+}

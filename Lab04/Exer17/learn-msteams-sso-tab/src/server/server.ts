@@ -64,8 +64,8 @@ express.use("/", Express.static(path.join(__dirname, "web/"), {
 express.get("/exchangeSsoTokenForOboToken", async (req, res) => {
   log("getting access token for Microsoft Graph...");
 
-  const clientId = process.env.SSOTAB_APP_ID as string;
-  const clientSecret = process.env.SSOTAB_APP_SECRET as string;
+  const clientId = process.env.TAB_APP_ID as string;
+  const clientSecret = process.env.TAB_APP_SECRET as string;
   const ssoToken = req.query.ssoToken as string;
 
   // build Azure AD OAuth2 token endpoint
@@ -78,7 +78,7 @@ express.get("/exchangeSsoTokenForOboToken", async (req, res) => {
     client_secret: clientSecret,
     assertion: ssoToken,
     requested_token_use: "on_behalf_of",
-    scope: process.env.SSOTAB_APP_SCOPES
+    scope: process.env.TAB_APP_SCOPES
   };
 
   // convert params to URL encoded form body payload

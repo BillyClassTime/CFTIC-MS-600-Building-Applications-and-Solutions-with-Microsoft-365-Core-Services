@@ -1,10 +1,22 @@
-﻿# Exercise 3: Understanding customization of add-ins
+﻿﻿# Exercise 3: Understanding customization of add-ins
 
 ## Task 1: Insert Excel charts using Microsoft Graph in a PowerPoint add-in
 
 ### Download zip file
 
 Download the zip file from [https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart/releases/download/88256/Insert_Excel_charts_using_Microsoft_Graph_in_a_PowerPoint_Add_in.zip](https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart/releases/download/88256/Insert_Excel_charts_using_Microsoft_Graph_in_a_PowerPoint_Add_in.zip).
+
+### Alternative project
+
+[Build your first PowerPoint task pane add-in - Office Add-ins | Microsoft Docs](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/powerpoint-quickstart?tabs=yeomangenerator)
+
+**References:** [Office Developer Tools | Visual Studio (microsoft.com)](https://visualstudio.microsoft.com/vs/features/office-tools/)
+
+**Resources:** [Beginner's guide to Office Add-ins - Office Add-ins | Microsoft Docs](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/learning-path-beginner)
+
+**Graph Tools:** [Get Started - Microsoft Graph](https://developer.microsoft.com/en-us/graph/get-started)
+
+
 
 ### Configure the project
 
@@ -19,7 +31,8 @@ Download the zip file from [https://github.com/OfficeDev/PowerPoint-Add-in-Micro
     - **API PERMISSIONS:** Files.Read.All and User.Read
 
         **Note**:
-        After you register your application, copy the Application (client) ID and the Directory (tenant) ID on the Overview blade of the App Registration in the Azure Management Portal. When you create the client secret on the Certificates and secrets blade, copy it too.
+        After you register your application, copy the Application (client) ID and the Directory (tenant) ID on the Overview blade of the App Registration in the Azure Management Portal. When you create the client secret on the Certificates and secrets blade, copy it too.
+
 1. In `web.config`, use the values that you copied in the previous step. Set `AAD:ClientID` to your client ID, set `AAD:ClientSecret` to your client secret, and set `"AAD:O365TenantID"` to your tenant ID.
 
 1. Open the solution in Visual Studio, and open Solution Explorer and then choose the **PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChartWeb** project. In **Properties**, ensure **SSL Enabled** is **True**. Verify that the **SSL URLproperty** uses the same domain name and port number as those listed previously.
@@ -51,4 +64,16 @@ Download the zip file from [https://github.com/OfficeDev/PowerPoint-Add-in-Micro
 ### Known issue 3: When you download a zip file and extract the files, you get an error indicating that the file path is too long.
 
 **Resolution:** Unzip your files to a folder directly under the root (e.g. **c:\sample**).
+
+**Creating DataBase**
+
+```
+USE [master]
+GO
+CREATE DATABASE [PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart] ON 
+( FILENAME = N'C:\MS-600\Lab05\Exer03\InsertChartWithGraph\PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChartWeb\App_Data\PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart.mdf' ),
+( FILENAME = N'C:\MS-600\Lab05\Exer03\InsertChartWithGraph\PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChartWeb\App_Data\PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart_log.ldf' )
+ FOR ATTACH ;
+GO
+```
 

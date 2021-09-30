@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "id": "740f90a0-20fb-11ec-8323-19e403d4dbd4",
+  "version": "0.0.1",
+  "packageName": "leanmsteamsssobot",
+  "developer": {
+    "name": "brotonsmartlife",
+    "websiteUrl": "https://teamlab05bmvb.azurewebsites.net",
+    "privacyUrl": "https://teamlab05bmvb.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://teamlab05bmvb.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "SSO Teams Bot",
+    "full": "SSO Teams Bot"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "e7833aa0-20fb-11ec-8323-19e403d4dbd4",
+      "name": "SSO Bot",
+      "contentUrl": "https://teamlab05bmvb.azurewebsites.net/Bot/ssoBot.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "bab1495c-b544-4c24-925d-ffc9714bf1fc",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [      
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "token.botframework.com",
+    "teamlab05bmvb.azurewebsites.net"
+  ],
+  "webApplicationInfo": {
+    "id": "bab1495c-b544-4c24-925d-ffc9714bf1fc",
+    "resource": "api://botid-bab1495c-b544-4c24-925d-ffc9714bf1fc"
+  },
+  "showLoadingIndicator": false
+}

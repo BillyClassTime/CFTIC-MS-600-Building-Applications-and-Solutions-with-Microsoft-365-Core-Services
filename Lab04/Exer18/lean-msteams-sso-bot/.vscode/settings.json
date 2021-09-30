@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f3c14b2e-b019-400f-bb1b-2f2e9faa3dab/resourceGroups/TeamsSSOApp/providers/Microsoft.Web/sites/teamsssoappbmvb",
+    "appService.deploySubpath": "."
+}

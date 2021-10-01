@@ -28,45 +28,21 @@
     <!-- Office UI Fabric JS and it's components are no longer actively supported. Please see https://aka.ms/PnP-OfficeFabricReact for recommended Patterns and Practices -->
     <!-- <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css"> -->
 
-<body class="ms-Fabric" dir="ltr">
+<body class="ms-font-m ms-welcome">
+    <div id="content-header">
+        <div class="padding">
+            <h1>Bienvenido</h1>
+        </div>
+    </div>
     <div id="content-main">
         <div class="padding">
+            <p>Select una diapositiva and then choose the buttons to below to add content to it.</p>
             <br />
-            <p class="ms-font-xxl ms-fontColor-neutralSecondary ms-fontWeight-semilight">Sample</p>
-            <br />
-            <div class="ms-font-xl ms-fontColor-neutralTertiary">Getting Started</div>
-            <p class="ms-font-m-plus ms-fontColor-neutralTertiary">This sample reads the value of the text you have selected in the slide. </p>
-             <br /><br />
-            <button class="Button Button--primary" id="get-data-from-selection">
-                <span class="Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
-                <span class="Button-label">Get data from selection</span>
-                <span class="Button-description">Gets the selected data and displays it.</span>
-            </button>
-            <br /><br /><br />
-            <div class="ms-font-m"><a target="_blank" class="ms-Link ms-Link--hero" href="https://go.microsoft.com/fwlink/?LinkId=276812">Find more samples online...</a></div>
+            <h3>Try it out</h3>
+            <button class="ms-Button" id="insert-image">Insert Image</button><br /><br />
+            <button class="ms-Button" id="insert-text">Insert Text</button>
         </div>
-    </div>
-    <div class="footer">
-        <div class="ms-Grid ms-bgColor-themeSecondary">
-            <div class="ms-Grid-row">
-                <div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12"> <div class="ms-font-xl ms-fontColor-white">Contoso</div></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Component used for displaying notifications -->
-    <div class="MessageBanner" id="notification-popup">
-        <div class="MessageBanner-content">
-            <div class="MessageBanner-text">
-                <div class="MessageBanner-clipper">
-                    <div class="ms-font-m-plus ms-fontWeight-semibold" id="notification-header"></div>
-                    <div class="ms-font-m ms-fontWeight-semilight" id="notification-body"></div>
-                </div>
-            </div>
-            <button class="MessageBanner-expand" style="display:none"><i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
-            <div class="MessageBanner-action"></div>
-        </div>
-        <button class="MessageBanner-close"> <i class="ms-Icon ms-Icon--ChromeClose"></i> </button>
     </div>
 </body>
+
 </html>
